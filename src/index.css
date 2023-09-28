@@ -1,13 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Sidebar color and active */
+:where(.css-dev-only-do-not-override-1ck3jst).ant-menu-light .ant-menu-item-selected {
+  color: black;
+  font-weight: 500;
 }
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-layout .ant-layout-sider-trigger {
+  color: black !important;
+  background: #D0F7FA !important;
+  font-weight: 500;
+}
+
+
+/* HomeNave Tab */
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap {
+  background-color: white;
+  margin-left: 30px;
+  padding-left: 30px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-tabs .ant-tabs-tab-btn {
+  padding-right: 50px;
+  padding-left: 50px;
+} 
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-tabs .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: #00635B;
+  padding: 30px;
+}
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff;
+}
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-tabs .ant-tabs-tab:hover {
+  color: #00635B;
+}
+
+:where(.css-dev-only-do-not-override-1ck3jst).ant-tabs .ant-tabs-tab.ant-tabs-tab-active::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+	border-top: 15px solid transparent;
+	border-left: 20px solid #00635B;
+	border-bottom: 15px solid transparent;
+}
+
+
+/* Card Title */
+:where(.css-dev-only-do-not-override-1ck3jst).ant-card .ant-card-head {
+  background: #D0F7FA;
+}
+
